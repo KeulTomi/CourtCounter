@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.courtcounter.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/csapatNevA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Team A"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/eredemenyA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/ketPontosA"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:onClick="ketPontosA"
+                android:text="+ 2 points"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/text_view_arány2A"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/haromPontosA"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:onClick="haromPontosA"
+                android:text="+ 3 Points"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="15dp"
+                    android:paddingLeft="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/text_view_arány3A"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:onClick="freeThrowA"
+                android:text="Free Throw"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:paddingLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/text_view_arány1A"/>
+
+                </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal"
+                android:text="Team B"
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+            <TextView
+                android:id="@+id/eredemenyB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="0"
+                android:textColor="@android:color/white"
+                android:textSize="40dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="15dp"
+                    android:paddingRight="15dp"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/white"
+                    android:id="@+id/text_view_arány2B"/>
+
+            <Button
+                android:id="@+id/ketPontosB"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:onClick="ketPontosB"
+                android:text="+ 2 Points"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="15dp"
+                        android:paddingRight="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/text_view_arány3B"/>
+
+            <Button
+                android:id="@+id/haromPontosB"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:onClick="haromPontosB"
+                android:text="+ 3 Points"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textSize="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@android:color/white"
+                            android:id="@+id/text_view_arány1B"/>
+
+            <Button
+                android:id="@+id/freeThrowB"
+                android:layout_width="130dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="25dp"
+                android:background="@android:color/black"
+                android:onClick="freeThrowB"
+                android:text="Free Throw"
+                android:textColor="@android:color/white"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+                    </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:onClick="reset"
+        android:text="reset"
+        android:textColor="@android:color/white"
+        android:textSize="20dp" />
+</RelativeLayout>
